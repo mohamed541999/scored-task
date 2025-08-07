@@ -1,0 +1,23 @@
+المشروع ده بيجهز سيرفر كاملة بتشتغل  LAMP (Linux, Apache, MariaDB, PHP) 
+ اللي بيعمله المشروع:
+ تثبيت Apache HTTP Server.
+ إعداد صفحة رئيسية بـ PHP.
+ تثبيت PHP وكل الـ dependencies.
+ تثبيت MariaDB وتفعيله.
+ إعداد الـ Firewall وفتح البورتات المطلوبة.
+ تشغيل كل الخدمات تلقائيًا بعد الريستارت.
+
+ هيكل المشروع
+bash
+lamp-fedora/
+├── playbook.yml
+└── roles/
+    ├── apache/
+    │   ├── tasks/
+    │   │   └── main.yml
+    ├── php/
+    │   ├── tasks/
+    │   │   └── main.yml
+    └── mysql/
+        ├── tasks/
+        │   └── main.yml
