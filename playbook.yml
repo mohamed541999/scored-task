@@ -1,0 +1,9 @@
+- name: Deploy LAMP stack on Fedora
+  hosts: webservers
+  become: yes
+
+  roles:
+    - apache
+    - php
+    - mysql
+    - firewall
